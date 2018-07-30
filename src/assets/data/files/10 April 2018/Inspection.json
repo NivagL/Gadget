@@ -1,0 +1,172 @@
+[
+    {
+        "id": "1",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId": "1",
+        "EquipmentId": "1"
+    },
+
+    {
+        "id": "2",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId": "2",
+        "EquipmentId": "2"
+    },
+
+    {
+        "id": "3",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId": "3",
+        "EquipmentId": "3"
+    },
+
+    {
+        "id": "4",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId": "4",
+        "EquipmentId": "4"
+    },
+
+    {
+        "id": "5",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"5",
+        "EquipmentId": "5"
+    },
+
+    {
+        "id": "6",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"6",
+        "EquipmentId": "6"
+    },
+
+    {
+        "id": "7",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"7",
+        "EquipmentId": "7"
+    },
+
+    {
+        "id": "8",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"8",
+        "EquipmentId": "8"
+    },
+
+    {
+        "id": "9",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"9",
+        "EquipmentId": "9"
+    },
+
+    {
+        "id": "10",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"10",
+        "EquipmentId": "10"
+    },
+
+    {
+        "id": "11",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"11",
+        "EquipmentId": "11"
+    },
+
+    {
+        "id": "12",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"12",
+        "EquipmentId": "12"
+    },
+
+    {
+        "id": "13",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"13",
+        "EquipmentId": "100"
+    },
+
+    {
+        "id": "14",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"14",
+        "EquipmentId": "101"
+    },
+
+    {
+        "id": "15",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"15",
+        "EquipmentId": "102"
+    },
+
+    {
+        "id": "16",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"16",
+        "EquipmentId": "103"
+    },
+
+    {
+        "id": "17",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"17",
+        "EquipmentId": "104"
+    },
+
+    {
+        "id": "18",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"18",
+        "EquipmentId": "105"
+    },
+
+    {
+        "id": "19",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "9 April 2018",
+        "Status": "task", 
+        "TaskId":"19",
+        "EquipmentId": "106"
+    }
+]

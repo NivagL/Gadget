@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "2018 05 04",
+        "Status": "task", 
+        "TaskId": "1",
+        "EquipmentId": "1"
+    },
+
+    {
+        "id": "2",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "2018 04 04",
+        "Status": "complete", 
+        "TaskId": "2",
+        "EquipmentId": "2"
+    },
+
+    {
+        "id": "3",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "2018 04 04",
+        "Status": "task", 
+        "TaskId": "3",
+        "EquipmentId": "3"
+    },
+
+    {
+        "id": "4",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "2018 04 03",
+        "Status": "task", 
+        "TaskId": "4",
+        "EquipmentId": "4"
+    },
+
+    {
+        "id": "5",
+        "Inspector": "Geoff Goldblum",
+        "CreatedOn": "2018 04 04",
+        "Status": "failed", 
+        "TaskId":"5",
+        "EquipmentId": "5"
+    }
+]

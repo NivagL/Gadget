@@ -1,0 +1,18 @@
+@import '../../media.css';
+
+.material-icons { 
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+.mat-form-field {
+    display: block;
+}
+
+.mat-tab-label {
+    min-width : 0px;
+    width: 167px;
+    height: 42px;
+    border-radius: 3px;
+    background-color: gray;
+}

@@ -1,0 +1,18 @@
+.status-container {
+    display: flex;
+    align-items: center; 
+    align-content: center;
+}
+
+mat-row:hover {
+    background-color:#EEEEEE;
+}
+
+.selected {
+    background:#EEEEEE;
+}
+
+.mat-column-Address {
+    flex: 0 0 200px;
+}
+

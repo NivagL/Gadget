@@ -1,0 +1,59 @@
+<!-- <h3 mat-dialog-title>{{inspection.SiteAddress}}</h3> -->
+<mat-tab-group color='accent' [dynamicHeight]='false'>
+    <mat-tab label="Contact">
+        <mat-form-field>
+            <input matInput [(ngModel)]="access.ContactName" placeholder="Contact">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type='tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" [(ngModel)]="access.ContactPhone" placeholder="Phone">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="access.NoticePeriod" placeholder="Notice Period">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type='email' [(ngModel)]="access.EMail" placeholder="email">
+        </mat-form-field>
+    </mat-tab>
+    <mat-tab label="Access Codes">
+        <mat-form-field>
+            <input matInput [(ngModel)]="access.Pin" placeholder="PIN">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="access.Code" placeholder="Code">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="access.KeyLocation" placeholder="Keys">
+        </mat-form-field>
+    </mat-tab>
+    <mat-tab label="Site Requirement">
+        <mat-form-field>
+            <textarea matInput [(ngModel)]="access.OnSiteInduction" placeholder="Site Induction" matTextareaAutosize matAutosizeMinRows="2"
+                matAutosizeMaxRows="5">
+            </textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput [(ngModel)]="access.SiteInstructions" placeholder="Site Instructions" matTextareaAutosize matAutosizeMinRows="2"
+                matAutosizeMaxRows="5">
+            </textarea>
+        </mat-form-field>
+    </mat-tab>
+    <mat-tab label="Access Diagram">
+        <img [src]="currentUrl|async">
+        <input type="file" capture="file" accept="file/*" (change)="getFiles($event)">
+    </mat-tab>
+</mat-tab-group>
+<mat-divider></mat-divider>
+<mat-toolbar>
+    <div class="space-filler"></div>
+    <div class="center">
+        <button mat-fab color='none' (click)="dialogRef.close(true)">Done
+            <!-- <i [ngClass]="config.iconSize">done</i> -->
+            <!-- <div class='optional'>Done</div> -->
+        </button>
+        <button mat-fab color='none' (click)="dialogRef.close(false)">Cancel
+            <!-- <i [ngClass]="config.iconSize">cancel</i> -->
+            <!-- <div class='optional'>Cancel</div> -->
+        </button>
+    </div>
+    <div class="space-filler"></div>
+</mat-toolbar>

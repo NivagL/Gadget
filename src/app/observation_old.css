@@ -1,0 +1,74 @@
+.material-icons { 
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+mat-form-field {
+    display: block;
+}
+
+.row1 {
+    /* width: 95vw; */
+    display: flex;
+    align-items: center; 
+    /* align-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+.row2 {
+    /* width: 95vw; */
+    display: flex;
+    align-items: center; 
+    /* align-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .group {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) {
+    .group {
+        margin: 5px;
+        text-align: left;
+        justify-content: flex-start;
+        flex: 0.5;
+        /* border: grey solid; */
+    }
+}
+
+.question {
+    margin: 5px;
+    text-align: left;
+    justify-content: flex-start;
+    flex: 1;
+    /* border: grey solid; */
+}
+
+.contol {
+    margin: 5px;
+    justify-content: center;
+    flex: 2;
+    /* border: grey solid; */
+}
+
+.notes {
+    margin: 5px;
+    /* justify-content: flex-end; */
+    flex: 1 1 auto;
+    /* border: grey solid; */
+}
+
+.assessment {
+    margin: 5px;
+    /* justify-content: flex-end; */
+    /* border: grey solid; */
+}
+
+.buttons {
+    margin: 5px;
+    justify-content: flex-end;
+    /* border: grey solid; */
+}

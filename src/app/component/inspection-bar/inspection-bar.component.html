@@ -1,0 +1,23 @@
+<div class="always-flex">
+  <div class="left">
+    <button mat-icon-button (click)="onPrevious()">
+      <i [ngClass]="config.iconSize">keyboard_arrow_left</i>
+    </button>
+  </div>
+  <div class='space-filler'></div>
+  <div class="center">
+    <app-inspection-toolbar 
+      [inspection]="selectedInspection"
+    ></app-inspection-toolbar>
+    <!-- <app-inspection-header 
+      [inspection]="selectedInspection">
+    </app-inspection-header> -->
+  </div>
+  <div class='space-filler'></div>
+  <div class='right'>
+    <button mat-icon-button (click)="onNext()">
+      <i [ngClass]="config.iconSize">keyboard_arrow_right</i>
+    </button>
+  </div>
+</div>
+<mat-progress-bar color='accent' mode="determinate" [value]="index/(inspections.length-1)*100"></mat-progress-bar>

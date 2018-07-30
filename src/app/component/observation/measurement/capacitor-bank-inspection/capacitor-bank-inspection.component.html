@@ -1,0 +1,64 @@
+<mat-horizontal-stepper [linear]="false" #stepper="matHorizontalStepper">
+
+<mat-step [stepControl]="formGroup1">
+      <app-capacitance-stage
+      [stage]="'One'"
+      [step]="1"
+      ></app-capacitance-stage>
+</mat-step>
+
+<mat-step [stepControl]="formGroup2">
+      <app-capacitance-stage
+      [stage]="'One'"
+      [step]="2"
+      ></app-capacitance-stage>  
+</mat-step>
+
+<mat-step [stepControl]="formGroup3">
+      <app-capacitance-stage
+      [stage]="'Two'"
+      [step]="1"
+      ></app-capacitance-stage>  
+</mat-step>
+
+<mat-step [stepControl]="formGroup4">
+      <app-capacitance-stage
+      [stage]="'Two'"
+      [step]="2"
+      ></app-capacitance-stage>  
+</mat-step>
+
+<mat-step [stepControl]="formGroup5">
+      <app-capacitance-stage
+      [stage]="'Three'"
+      [step]="1"
+      ></app-capacitance-stage>  
+</mat-step>
+
+<mat-step [stepControl]="formGroup6">
+      <app-capacitance-stage
+      [stage]="'Three'"
+      [step]="2"
+      ></app-capacitance-stage>  
+</mat-step>
+
+<mat-step [stepControl]="formGroup7">
+      <app-insulation-stage
+      [stage]="'One'"
+      ></app-insulation-stage>  
+</mat-step>
+
+<mat-step [stepControl]="formGroup8">
+      <app-insulation-stage
+      [stage]="'Two'"
+      ></app-insulation-stage>  
+</mat-step>
+
+<mat-step [stepControl]="formGroup9">
+      <app-insulation-stage
+      [stage]="'Three'"
+      ></app-insulation-stage>  
+</mat-step>
+      
+</mat-horizontal-stepper>
+

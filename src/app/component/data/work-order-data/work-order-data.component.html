@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <tr>
+      <th>_id</th> 
+      <th>_rev</th> 
+      <th>Title</th> 
+      <th>StandardCode</th> 
+      <th>Standard</th> 
+      <th>StartDate</th> 
+      <th>EndDate</th> 
+      <th>Grouping</th> 
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list|async">
+      <td>{{item._id}}</td>
+      <td>{{item._rev}}</td>
+      <td>{{item.Title}}</td>
+      <td>{{item.StandardCode}}</td>
+      <td>{{item.Standard}}</td>
+      <td>{{item.StartDate}}</td>
+      <td>{{item.EndDate}}</td>
+      <td>{{item.Grouping}}</td>
+    <tr>
+  </tbody>
+</table>

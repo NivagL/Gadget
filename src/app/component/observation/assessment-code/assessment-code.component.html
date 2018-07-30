@@ -1,0 +1,41 @@
+<span class='always-flex' *ngIf="observation!=undefined">
+    <span class='left'>
+        <span class='sub-title'>
+            {{observation.Observation.Group}} -
+        </span>
+        <span class='title'>
+            {{observation.Observation.Text}}
+        </span>
+    </span>
+    <div class='space-filler'></div>
+    <span class='right'>
+        <mat-button-toggle-group #group="matButtonToggleGroup">
+            <mat-button-toggle [value]="" [checked]="checked(-1)" [disabled]="'false'" (click)="onClick(undefined)">
+                -
+            </mat-button-toggle>
+            <mat-button-toggle *ngFor="let code of codes|async" [value]="code.ShortText" [checked]="checked(code.CA)" [disabled]="!enabled(code.CA)"
+                (click)="onClick(code)">
+                {{code.CA}}
+            </mat-button-toggle>
+        </mat-button-toggle-group>
+    </span>
+</span>
+<span class='always-flex' *ngIf="(observation && observation.SelectedCode != -1) || (observation && observation.Notes)">
+    <span class='space-filler'>
+        <mat-form-field>
+            <input matInput [(ngModel)]="observation.Notes" (onchange)="Save()">
+        </mat-form-field>
+    </span>
+    <span class='right'>
+        <p strong *ngIf="observation.SelectedCode != -1" (change)="Save()">
+            {{selectedCodeText}}
+        </p>
+        <p strong *ngIf="observation.SelectedCode == -1"></p>
+    </span>
+    <span class='buttons'>
+        <button mat-icon-button (click)="openPhotoGallery()">
+            <i [ngClass]="config.iconSize">add_a_photo</i>
+            <!-- <div class='optional'>Photo</div> -->
+        </button>
+    </span>
+</span>

@@ -1,0 +1,28 @@
+<div class='note-container'>
+<!-- <mat-input-container [color]="'accent'"> -->
+    <mat-form-field>
+        <input matInput placeholder="Inspection Notes" [(ngModel)]="inspection.Notes" (onchange)="Save()">
+    </mat-form-field>
+<!-- </mat-input-container> -->
+</div>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let a of activities|async" 
+        [expanded]="a.Expanded"
+        (opened)="opened(a)"
+        (closed)="closed(a)"
+        ><mat-expansion-panel-header>
+            <mat-panel-title>
+                <h4 matLine>{{a.Activity.Code}}</h4>
+                <h4 matLine *ngIf="a.Activity.Code.startsWith('PD') && a.Activity.Version>1">({{a.Activity.Version}})</h4>
+            </mat-panel-title>
+            <mat-panel-description>
+                <h4 matLine>{{a.Activity.Name}}</h4>
+                <h4 matLine *ngIf="a.Activity.Code.startsWith('PD')">...(Defects: {{getCount(a._id)}})</h4>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-observation-list 
+            [ActivityId]="a._id"
+            (onActivityComplete)="onActivityComplete($event)"
+        ></app-observation-list>
+    </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,50 @@
+<div class="always-flex">
+  <div class="left" *ngIf="inspection!=undefined">
+    <app-inspection-header 
+      [inspection]="inspection"
+      (click)="onClick()"
+      ></app-inspection-header>
+  </div>
+  <div class='space-filler'></div>
+  <div class='right'>
+    <button mat-fab color='none' (click)="onComplete()">
+      Done
+    </button>
+    <button mat-fab color='none' (click)="onHold()">
+      Hold
+    </button>
+    <button mat-fab color='none' (click)="onCancel()">
+      Cancel
+    </button>
+    <button mat-fab color='none' (click)="openPhotoGallery()">
+      Photo
+    </button>
+    <button mat-fab color='none' (click)="openAccessDialog()">
+      Access
+    </button>
+  </div>
+
+  <!-- <i [ngClass]="config.iconSize">watch_later</i> -->
+  <!-- <div class='right'>
+    <button mat-icon-button (click)="onComplete()">
+      <i class="material-icons">done</i>
+      <div class="optional">Done</div>
+    </button>
+    <button mat-icon-button (click)="onHold()">
+      <i class="material-icons">watch_later</i>
+      <div class="optional">Hold</div>
+    </button>
+    <button mat-icon-button (click)="onCancel()">
+      <i class="material-icons">cancel</i>
+      <div class="optional">Cancel</div>
+    </button>
+    <button mat-icon-button (click)="openPhotoGallery()">
+      <i class="material-icons">photo_camera</i>
+      <div class="optional">Photo</div>
+    </button>
+    <button mat-icon-button (click)="openAccessDialog()">
+      <i class="material-icons">block</i>
+      <div class="optional">Access</div>
+    </button>
+  </div> -->
+</div>

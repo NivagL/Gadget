@@ -1,0 +1,30 @@
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="top-text">{{observation?.Text}}</div>
+      <div class="numbertext">
+      {{currentIndex + 1}} / {{length}}
+      </div>
+
+      <img [src]="currentUrl|async" style="width:100%" [ngClass]="rotate">
+
+      <div class="text">{{inspection.SiteAddress}}, {{inspectionPhoto.TakenOn}}</div>
+      <div class="text2" *ngIf="inspectionPhoto.TakenAt">{{inspectionPhoto.TakenAt.Lat}}/{{inspectionPhoto.TakenAt.Lng}}</div>
+    </div>
+    <a class="prev" (click)="onPrevious()">&#10094;</a>
+    <a class="next" (click)="onNext()">&#10095;</a>
+  </div>
+  <mat-toolbar>
+    <span class='space-filler'></span>
+    <span class='center'>
+      <button mat-fab color='none' (click)="OnNewPhoto()">Add
+        <!-- <i [ngClass]="config.iconSize">add_a_photo</i> -->
+        <!-- <div class='optional'>Add</div> -->
+      </button>
+      <button mat-fab color='none' (click)="dialogRef.close(true)">Done
+        <!-- <i [ngClass]="config.iconSize">done</i> -->
+        <!-- <div class='optional'>Done</div> -->
+      </button>
+    </span>
+    <span class='space-filler'></span>
+    <canvas width="300" height="300" id="canvas" style="display: none;"></canvas>
+  </mat-toolbar>

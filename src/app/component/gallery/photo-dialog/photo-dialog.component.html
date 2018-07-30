@@ -1,0 +1,18 @@
+<input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" (change)="getFiles($event)">
+<mat-dialog-actions>
+    <mat-toolbar>
+        <div class="space-filler"></div>
+        <div class="center">
+            <button mat-fab color='none' (click)="dialogRef.close(true)">Done
+                <!-- <i [ngClass]="config.iconSize">done</i> -->
+                <!-- <div class='optional'>Add</div> -->
+            </button>
+            <!-- <div class="space-filler"></div>  -->
+            <button mat-fab color='none' mat-fab (click)="dialogRef.close(false)">Cancel
+                <!-- <i [ngClass]="config.iconSize">cancel</i> -->
+                <!-- <div class='optional'>Cancel</div> -->
+            </button>
+        </div>
+        <div class="space-filler"></div>
+    </mat-toolbar>
+</mat-dialog-actions>

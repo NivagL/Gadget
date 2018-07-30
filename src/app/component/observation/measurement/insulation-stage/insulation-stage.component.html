@@ -1,0 +1,105 @@
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">
+        Stage {{stage}}
+      </th>
+    </tr>
+    <tr>
+      <th>Phase</th>
+      <th>Serial Number</th>
+      <th>
+        <p>Contact Resistance (µΩ)</p>
+      </th>
+      <th colspan="2">
+        <p>Insulation Resistance (GΩ)</p>
+        <p>(across contact with switch open)</p>
+      </th>
+      <th colspan="2">
+        <p>Insulation Resistance (GΩ)</p>
+        <p>(phase to earth with switch closed)</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Red</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="red_serial_number" (input)="red_serial_number = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="red_contact_resistance" (input)="red_contact_resistance = $event.target.value">
+        </div>
+      </td>
+      <td>R-R</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="red_insulation_resistance1" (input)="red_insulation_resistance1 = $event.target.value">
+        </div>
+      </td>
+      <td>R-YB</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="red_insulation_resistance2" (input)="red_insulation_resistance2 = $event.target.value">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Yellow</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="yellow_serial_number" (input)="yellow_serial_number = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="yellow_contact_resistance" (input)="yellow_contact_resistance = $event.target.value">
+        </div>
+      </td>
+      <td>Y-Y</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="yellow_insulation_resistance1" (input)="yellow_insulation_resistance1 = $event.target.value">
+        </div>
+      </td>
+      <td>Y-RB</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="yellow_insulation_resistance2" (input)="yellow_insulation_resistance2 = $event.target.value">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Blue</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="blue_serial_number" (input)="blue_serial_number = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="blue_contact_resistance" (input)="blue_contact_resistance = $event.target.value">
+        </div>
+      </td>
+      <td>Y-Y</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="blue_insulation_resistance1" (input)="blue_insulation_resistance1 = $event.target.value">
+        </div>
+      </td>
+      <td>Y-RB</td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="blue_insulation_resistance2" (input)="blue_insulation_resistance2 = $event.target.value">
+        </div>
+      </td>
+    </tr>
+
+  </tbody>
+</table>

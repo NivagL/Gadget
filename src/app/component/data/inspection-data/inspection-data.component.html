@@ -1,0 +1,32 @@
+<table>
+  <thead>
+    <tr>
+      <th>_id</th> 
+      <th>_rev</th> 
+      <th>WorkOrderId</th> 
+      <th>TaskId</th> 
+      <th>EquipmentId</th> 
+      <th>GISID</th> 
+      <th>Name</th> 
+      <th>SiteAddress</th> 
+      <th>Inspector</th> 
+      <th>CreatedOn</th> 
+      <th>Status</th> 
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list|async">
+      <td>{{item._id}}</td>
+      <td>{{item._rev}}</td>
+      <td>{{item.WorkOrderId}}</td>
+      <td>{{item.TaskId}}</td>
+      <td>{{item.EquipmentId}}</td>
+      <td>{{item.GISID}}</td>
+      <td>{{item.Name}}</td>
+      <td>{{item.SiteAddress}}</td>
+      <td>{{item.Inspector}}</td>
+      <td>{{item.CreatedOn}}</td>
+      <td>{{item.Status}}</td>
+    <tr>
+  </tbody>
+</table>

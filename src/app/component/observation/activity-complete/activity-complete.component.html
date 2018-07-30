@@ -1,0 +1,10 @@
+<span class='container'>
+  <span class='space-filler'></span>
+  <span class='right'>{{observation.Observation.Text}}</span>
+  <span class='right'>
+    <mat-checkbox 
+      [(ngModel)]="checked"
+      (change)="onChanged()"
+    ></mat-checkbox>
+  </span>
+</span>

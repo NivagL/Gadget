@@ -1,0 +1,231 @@
+[
+	{
+		"id": "1",
+		"GISID": 748655,
+		"Name": "C-2300",
+		"SiteAddress": "1 Aldersgate Road Hillsborough",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.932462,
+			"Lng": 174.744186
+		}
+	},
+	{
+		"id": "2",
+		"GISID": 687720,
+		"Name": "C-823",
+		"SiteAddress": "2 Allison Street Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.905984,
+			"Lng": 174.725061
+		}
+	},
+	{
+		"id": "3",
+		"GISID": 694003,
+		"Name": "C-692",
+		"SiteAddress": "36 White Swan Road Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.91451,
+			"Lng": 174.725609
+		}
+	},
+	{
+		"id": "4",
+		"GISID": 687720,
+		"Name": "C-1453",
+		"SiteAddress": "2C White Swan Road Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.912879,
+			"Lng": 174.727711
+		}
+	},
+	{
+		"id": "5",
+		"GISID": 49120206,
+		"Name": "C-2291",
+		"SiteAddress": "180 White Swan Road Mount Roskill",
+		"GCValue": "Unknown",
+		"Location": 
+		{
+			"Lat": -36.92165,
+			"Lng": 174.715804
+		}
+	},
+	{
+		"id": "6",
+		"GISID": 652344,
+		"Name": "C-2563",
+		"SiteAddress": "1/4 Andes Place Lynfield",
+		"GCValue": "Canopy",
+		"Location": 
+		{
+			"Lat": -36.928789,
+			"Lng": 174.718834
+		}
+	},
+	{
+		"id": "7",
+		"GISID": 6680026,
+		"Name": "C-3984",
+		"SiteAddress": "57A Anita Avenue Mount Roskill",
+		"GCValue": "Open",
+		"Location": 
+		{
+			"Lat": -36.922742,
+			"Lng": 174.730296
+		}
+	},	
+	{
+		"id": "8",
+		"GISID": 651346,
+		"Name": "C-2378",
+		"SiteAddress": "27A Athenic Avenue Lynfield",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.931333,
+			"Lng": 174.720076
+		}
+	},
+	{
+		"id": "9",
+		"GISID": 642314,
+		"Name": "C-1553",
+		"SiteAddress": "156 Boundary Road Blockhouse Bay",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.920265,
+			"Lng": 174.713471
+		}
+	},
+	{
+		"id": "10",
+		"GISID": 623122,
+		"Name": "C-3167",
+		"SiteAddress": "Room 55/123 Boundary Road Blockhouse Bay",
+		"GCValue": "Canopy",
+		"Location": 
+		{
+			"Lat": -36.919838,
+			"Lng": 174.712959
+		}
+	},
+	{
+		"id": "11",
+		"GISID": 692831,
+		"Name": "C-2305",
+		"SiteAddress": "17 Boyce Avenue Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.91567,
+			"Lng": 174.728749
+		}
+	},
+	{
+		"id": "12",
+		"GISID": 693080,
+		"Name": "C-2306",
+		"SiteAddress": "39 Boyce Avenue Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.916784,
+			"Lng": 174.727608
+		}
+	},
+	{
+		"id": "100",
+		"GISID": 2443771,
+		"Name": "S-1565",
+		"SiteAddress": "3/14 Alpha Street Papakura",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -37.063556,
+			"Lng": 174.950483
+		}
+	},
+	{
+		"id": "101",
+		"GISID": 2442834,
+		"Name": "S-2917",
+		"SiteAddress": "102 Arimu Road Papakura",
+		"GCValue": "Canopy",
+		"Location": 
+		{
+			"Lat": -37.054654,
+			"Lng": 174.943524
+		}
+	},
+	{
+		"id": "102",
+		"GISID": 53092895,
+		"Name": "S-10377",
+		"SiteAddress": "30 Arion Road Takanini",
+		"GCValue": "Integral",
+		"Location": 
+		{
+			"Lat": -37.047638,
+			"Lng": 174.930359
+		}
+	},
+	{
+		"id": "103",
+		"GISID": 53092824,
+		"Name": "S-10168",
+		"SiteAddress": "3 Arion Road Takanini",
+		"GCValue": "Integral",
+		"Location": 
+		{
+			"Lat": -37.048533,
+			"Lng": 174.933806
+		}
+	},
+	{
+		"id": "104",
+		"GISID": 2439536,
+		"Name": "S-2128",
+		"SiteAddress": "22 Ashdown Place Pahurehure",
+		"GCValue": "Canopy",
+		"Location": 
+		{
+			"Lat": -37.069471,
+			"Lng": 174.937162
+		}
+	},
+	{
+		"id": "105",
+		"GISID": 2446986,
+		"Name": "S-5245",
+		"SiteAddress": "10 Averill Street Papakura",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -37.063029,
+			"Lng": 174.944348
+		}
+	},
+	{
+		"id": "106",
+		"GISID": 50522182,
+		"Name": "S-497",
+		"SiteAddress": "50 Bates Street Papakura",
+		"GCValue": "Canopy",
+		"Location": 
+		{
+			"Lat": -37.069231,
+			"Lng": 174.957759
+		}
+	}
+
+]

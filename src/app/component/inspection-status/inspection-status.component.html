@@ -1,0 +1,28 @@
+<div class="always-flex">
+  <div class="left" (click)="onTitleClick()">
+    <div class='title-container'>
+      <div mat-cell strong class='title'>{{workPack.Title}}</div>
+      <div class='sub-title'>{{workPack.StartDate}} - {{workPack.EndDate}}</div>
+    </div>
+    <div class='description optional'>
+      {{workPack.Standard}} 
+    </div>
+  </div>
+  <div class='space-filler'></div>
+  <div class="right">
+    <mat-chip-list>
+      <mat-chip color='primary' [selected]='true' (click)="onClick(workPack, 'pending')">
+        {{getCount(workPack._id, 'pending')}}
+      </mat-chip>
+      <mat-chip color='accent' [selected]='true' (click)="onClick(workPack, 'done')">
+        {{getCount(workPack._id, 'done')}}
+      </mat-chip>
+      <mat-chip color='warn' [selected]='true' (click)="onClick(workPack, 'hold')">
+        {{getCount(workPack._id, 'hold')}}
+      </mat-chip>
+      <mat-chip selected='false' (click)="onClick(workPack, 'cancelled')">
+        {{getCount(workPack._id, 'cancelled')}}
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<span class='container'>
+  <span class='left'>
+    Controls Demo
+  </span>
+  <span class='left'>
+    Date question
+  </span>
+  <span class='space-filler'></span>
+  <span class='right'>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </span>
+</span>

@@ -1,0 +1,105 @@
+<mat-form-field>
+  <mat-select placeholder="Status" 
+      (change)="applyStatusFilter($event.value)" 
+      [formControl]="statusSelection"
+      [(ngModel)]="statusFilter"
+      >
+    <mat-option>all</mat-option>
+    <mat-option *ngFor="let status of status_list" [value]="status">
+      {{status}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-select placeholder="Enclosure" 
+      (change)="applyEnclosureFilter($event.value)" 
+      [formControl]="enclosureSelection"
+      [(ngModel)]="enclosureFilter"
+      >
+    <mat-option>all</mat-option>
+    <mat-option *ngFor="let enclosure of enclosure_list" [value]="enclosure">
+      {{enclosure}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <input matInput (keyup)="applyAddressFilter($event.target.value)" 
+  placeholder="Address"
+  [(ngModel)]="addressFilter"
+></mat-form-field>
+
+<!-- <i class='right' [ngClass]="config.iconSize" (click)="applyFilters()">search</i> -->
+
+<div class="inspection-container mat-elevation-z8">
+
+  <mat-table [dataSource]="dataSource" matSort dense>
+
+    <ng-container matColumnDef="GISID">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+      <mat-cell *matCellDef="let i">
+        {{i.GISID}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+      <mat-cell *matCellDef="let i">
+        {{i.Name}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Enclosure">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Enclosure </mat-header-cell>
+      <mat-cell *matCellDef="let i">
+        {{i.GCValue}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Status">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
+      <mat-cell *matCellDef="let i">
+        <span class="status-container">
+          <mat-chip *ngIf="i.Status=='pending'" color="primary" selected='true'>{{i.Status[0]}}</mat-chip>
+          <mat-chip *ngIf="i.Status=='done'" color="accent" selected='true'>{{i.Status[0]}}</mat-chip>
+          <mat-chip *ngIf="i.Status=='hold'" color="warn" selected='true'>{{i.Status[0]}}</mat-chip>
+          <mat-chip *ngIf="i.Status=='cancelled'" color="warn" selected='false'>{{i.Status[0]}}</mat-chip>
+          <i *ngIf="i.Access" class="material-icons">block</i>
+        </span>
+      </mat-cell>
+    </ng-container>
+
+    <!-- <ng-container matColumnDef="Access">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Access </mat-header-cell>
+      <mat-cell *matCellDef="let i">
+        <i *ngIf="i.Access" class="material-icons">block</i>
+      </mat-cell>
+    </ng-container> -->
+      
+    <ng-container matColumnDef="Address">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Address </mat-header-cell>
+      <mat-cell *matCellDef="let i">
+        {{i.SiteAddress}}
+      </mat-cell>
+    </ng-container>
+
+    <!-- <ng-container matColumnDef="Defects">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Defects </mat-header-cell>
+        <mat-cell *matCellDef="let ea" 
+        > 
+        0
+        </mat-cell>
+      </ng-container> -->
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns; let entry" 
+      (click)="onRow(row)" 
+      [ngClass]="{ 'selected': row.GISID == selectedInspection.GISID }">
+    </mat-row>
+  </mat-table>
+
+  <mat-paginator 
+    [pageSize]="pageSize"
+    [pageSizeOptions]="pageSizeOptions"
+  ></mat-paginator>
+
+</div>

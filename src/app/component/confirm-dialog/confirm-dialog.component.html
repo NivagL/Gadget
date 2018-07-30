@@ -1,0 +1,22 @@
+<h3 mat-dialog-title>Confirm</h3>
+<div mat-dialog-content>{{confirmMessage}}</div>
+<mat-dialog-actions>
+  <mat-toolbar>
+    <div class="space-filler"></div>
+    <div class="center">
+      <button mat-fab color='none' (click)="dialogRef.close(true)" *ngIf="style != 'OK'">Confirm
+        <!-- <i [ngClass]="config.iconSize">done</i> -->
+        <!-- <span class='optional'>Confirm</span> -->
+      </button>
+      <button mat-fab color='none' (click)="dialogRef.close(false)" *ngIf="style != 'OK'">Cancel
+        <!-- <i [ngClass]="config.iconSize">cancel</i> -->
+        <!-- <span class='optional'>Cancel</span> -->
+      </button>
+      <button mat-fab color='none' (click)="dialogRef.close(true)" *ngIf="style == 'OK'">OK
+        <!-- <i [ngClass]="config.iconSize">cancel</i> -->
+        <!-- <span class='optional'>Cancel</span> -->
+      </button>
+    </div>
+    <div class="space-filler"></div>
+  </mat-toolbar>
+</mat-dialog-actions>

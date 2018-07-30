@@ -1,0 +1,52 @@
+[
+    {
+		"id": "1",
+        "Activity": "PD102",
+        "Code": "OC0001",
+        "Group": "Access issues for maintenance undertaken",
+        "Text": "Temp sit. prevents maintenance",
+        "ValidCodes": ["0"]},
+    {
+		"id": "2",
+        "Activity": "PD102",
+        "Code": "OC0002",
+        "Group": "Access issues for maintenance undertaken",
+        "Text": "Perm sit. prevents maint No access plan",
+        "ValidCodes": ["0","4"]},
+    {
+		"id": "3",
+        "Activity": "PD102",
+        "Code": "OC0003",
+        "Group": "General condition",
+        "Text": "Dust/Dirt/Rubbish/Debris/Vermin",
+        "ValidCodes": ["0","1","2","3","4"]},
+    {
+		"id": "4",
+        "Activity": "PD102",
+        "Code": "OC0004",
+        "Group": "General condition",
+        "Text": "Blocked ventilation equip",
+        "ValidCodes": ["0","1","2","3","4"]},
+    {
+		"id": "5",
+        "Activity": "PD102",
+        "Code": "OC0005",
+        "Group": "General condition",
+        "Text": "Signs of water leaks",
+        "ValidCodes": ["0","1","2","3","4"]},
+    {
+		"id": "6",
+        "Activity": "PD102",
+        "Code": "OC0006",
+        "Group": "Vegetation",
+        "Text": "Vege will be within MAD by next insp.",
+        "ValidCodes": [1]},
+    {
+		"id": "7",
+        "Activity": "PD102",
+        "Code": "OC0007",
+        "Group": "Vegetation",
+        "Text": "Other Vege issues that are a risk",
+        "ValidCodes": ["0","1","2","3","4"]
+    }
+]

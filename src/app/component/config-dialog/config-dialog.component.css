@@ -1,0 +1,10 @@
+@import '../../media.css';
+
+.material-icons { 
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+.mat-form-field {
+    display: block;
+}

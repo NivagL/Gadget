@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>Account Config</h2> 
+<mat-dialog-content>
+  <mat-form-field>
+    <input matInput [(ngModel)]="account.Inspector" placeholder="Name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="account.Phone" placeholder="Phone">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="account.Mobile" placeholder="Mobile">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="account.EMail" placeholder="Email">
+  </mat-form-field>
+    
+  <mat-form-field>
+    <mat-select placeholder="Network Operator" [(ngModel)]="account.Network">
+      <mat-option *ngFor="let op of operators" [value]="op.value">
+        {{ op.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <mat-toolbar>
+    <div class="space-filler"></div> 
+    <div class="center">
+    <button mat-fab color='none' (click)="dialogRef.close(true)">Done
+      <!-- <i [ngClass]="config.iconSize">done</i> -->
+      <!-- <span class='optional'>Done</span> -->
+    </button>
+    <button mat-fab color='none' (click)="dialogRef.close(false)">Cancel
+      <!-- <i [ngClass]="config.iconSize">cancel</i> -->
+      <!-- <span class='optional'>Cancel</span> -->
+    </button>
+    </div> 
+    <div class="space-filler"></div> 
+  </mat-toolbar>
+</mat-dialog-actions>
+  

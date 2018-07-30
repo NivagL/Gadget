@@ -1,0 +1,20 @@
+[
+	{
+		"id": "1",
+		"Title": "White Swan",
+		"StandardCode": "ESM503",
+		"Standard": "GM Distribution (3 Yearly)",
+		"StartDate": "1 Feb 2018",
+		"EndDate": "28 Feb 2018",
+		"Grouping": "Enclosure type"
+	},
+	{
+		"id": "2",
+		"Title": "Papakura",
+		"StandardCode": "ESM503",
+		"Standard": "GM Distribution (3 Yearly)",
+		"StartDate": "1 Mar 2018",
+		"EndDate": "21 Mar 2018",
+		"Grouping": "Enclosure type"
+	}
+]

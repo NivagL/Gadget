@@ -1,0 +1,11 @@
+@import '../../media.css';
+
+.status-chip {
+    display: flex;
+    align-items: center; 
+    align-content: center;
+}
+
+div {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

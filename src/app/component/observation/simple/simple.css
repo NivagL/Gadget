@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    align-items: center; 
+    align-content: center;
+    /* border: grey solid; */
+}
+
+.space-filler {
+    flex: 1 1 auto;
+    /* border: grey solid; */
+}
+
+.left {
+    font-size: 18px;
+    margin: 2px;
+    /* flex: 1; */
+    justify-content: flex-start;
+    /* border: grey solid; */
+}
+
+.center {
+    font-size: 18px;
+    margin: 2px;
+    /* flex: 1; */
+    justify-content: center;
+    /* border: grey solid; */
+}
+
+.right {
+    font-size: 18px;
+    margin: 2px;
+    /* flex: 1; */
+    justify-content: flex-end;
+    /* border: grey solid; */
+}

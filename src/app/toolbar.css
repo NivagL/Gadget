@@ -1,0 +1,28 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.left {
+    margin: 5px;
+    justify-content: flex-start;
+    /* border: grey solid; */
+}
+
+.right {
+    margin: 5px;
+    justify-content: flex-end;
+    /* border: grey solid; */
+}
+
+.center {
+    margin: 5px;
+    justify-content: center;
+    /* border: grey solid; */
+}
+
+.space-filler {
+    flex: 1 1 auto;
+    /* border: grey solid; */
+}

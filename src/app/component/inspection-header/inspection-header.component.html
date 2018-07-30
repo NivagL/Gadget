@@ -1,0 +1,21 @@
+<div class='title-container'>
+  <div class='status-chip'>
+    <mat-chip-list>
+      <mat-chip *ngIf="inspection.Status=='pending'" color="primary" selected='true'>
+        p
+      </mat-chip>
+      <mat-chip *ngIf="inspection.Status=='done'" color="accent" selected='true'>
+        d
+      </mat-chip>
+      <mat-chip *ngIf="inspection.Status=='hold'" color="warn" selected='true'>
+        h
+      </mat-chip>
+      <mat-chip *ngIf="inspection.Status=='cancelled'" color="" selected='false'>
+        c
+      </mat-chip>
+    </mat-chip-list>
+    <i *ngIf="inspection.Access" class="material-icons">block</i>
+  </div>
+  <div class='title'>{{inspection.SiteAddress}}</div>
+  <div class='sub-title'>{{inspection.Type}}: {{inspection.GISID}}, {{inspection.Name}}</div>
+</div>

@@ -1,0 +1,526 @@
+{
+    "WorkOrder": [
+        {
+            "id": "1",
+            "Title": "White Swan",
+            "StandardCode": "ESM503",
+            "Standard": "GM Distribution (3 Yearly)",
+            "StartDate": "1 Feb 2018",
+            "EndDate": "28 Feb 2018",
+            "Grouping": "Enclosure type"
+        },
+        {
+            "id": "2",
+            "Title": "White Swan",
+            "StandardCode": "ESM503",
+            "Standard": "GM Distribution (3 Yearly)",
+            "StartDate": "1 Mar 2018",
+            "EndDate": "21 Mar 2018",
+            "Grouping": "Enclosure type"
+        }
+    ],
+    "Task": [
+        {
+            "id": "1",
+            "WorkOrderId": "1",
+            "GISID": 748655,
+            "N3ID": "N3-1",
+            "Activities": [
+                "PD102",
+                "PD103",
+                "PD104"
+            ]
+        },
+        {
+            "id": "2",
+            "WorkOrderId": "1",
+            "GISID": 687720,
+            "N3ID": "N3-2",
+            "Activities": [
+                "PD102",
+                "PD104"
+            ]
+        },
+        {
+            "id": "3",
+            "WorkOrderId": "2",
+            "GISID": 694003,
+            "N3ID": "N3-3",
+            "Activities": [
+                "PD102",
+                "PD103"
+            ]
+        },
+        {
+            "id": "4",
+            "WorkOrderId": "2",
+            "GISID": 691040,
+            "N3ID": "N3-4",
+            "Activities": [
+                "PD102",
+                "PD103"
+            ]
+        },
+        {
+            "id": "5",
+            "WorkOrderId": "2",
+            "GISID": 49120206,
+            "N3ID": "N3-5",
+            "Activities": [
+                "PD102",
+                "PD104",
+                "KitchenSink"
+            ]
+        }
+    ],
+    "Observation": [
+        {
+            "id": "1",
+            "Activity": "PD102",
+            "Code": "OC0001",
+            "Group": "Access issues",
+            "Text": "Temp sit. prevents maintenance",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "2",
+            "Activity": "PD102",
+            "Code": "OC0002",
+            "Group": "Access issues",
+            "Text": "Perm sit. prevents maint No access plan",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "4"
+            ]
+        },
+        {
+            "id": "3",
+            "Activity": "PD102",
+            "Code": "OC0003",
+            "Group": "General condition",
+            "Text": "Dust/Dirt/Rubbish/Debris/Vermin",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "4",
+            "Activity": "PD102",
+            "Code": "OC0004",
+            "Group": "General condition",
+            "Text": "Blocked ventilation equip",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "5",
+            "Activity": "PD102",
+            "Code": "OC0005",
+            "Group": "General condition",
+            "Text": "Signs of water leaks",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "6",
+            "Activity": "PD102",
+            "Code": "OC0006",
+            "Group": "Vegetation",
+            "Text": "Vege will be within MAD by next insp.",
+            "Type": "ObCode",
+            "ValidCodes": [
+                1
+            ]
+        },
+        {
+            "id": "7",
+            "Activity": "PD102",
+            "Code": "OC0007",
+            "Group": "Vegetation",
+            "Text": "Other Vege issues that are a risk",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "8",
+            "Activity": "PD103",
+            "Code": "OC0011",
+            "Group": "General equipment condition",
+            "Text": "Breathing vent is obstructed ",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "9",
+            "Activity": "PD103",
+            "Code": "OC0012",
+            "Group": "General equipment condition",
+            "Text": "Transformer leaning",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "4"
+            ]
+        },
+        {
+            "id": "10",
+            "Activity": "PD103",
+            "Code": "OC0013",
+            "Group": "General equipment condition",
+            "Text": "Tap changer handle not bolted/locked",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "4"
+            ]
+        },
+        {
+            "id": "11",
+            "Activity": "PD103",
+            "Code": "OC0013",
+            "Group": "General equipment condition",
+            "Text": "Sign of impact that risks failure",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "11",
+            "Activity": "PD103",
+            "Code": "OC0014",
+            "Group": "General equipment condition",
+            "Text": "Radiator damage that effects cooling",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "12",
+            "Activity": "PD104",
+            "Code": "OC0021",
+            "Group": "Oil leakage",
+            "Text": "Oil leakage from tank",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "13",
+            "Activity": "PD104",
+            "Code": "OC0021",
+            "Group": "Oil leakage",
+            "Text": "Obscured sight glass",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "id": "14",
+            "Activity": "PD104",
+            "Code": "OC0021",
+            "Group": "Oil leakage",
+            "Text": "Oil sight glass not fitted",
+            "Type": "ObCode",
+            "ValidCodes": [
+                "4"
+            ]
+        },
+        {
+            "id": "15",
+            "Activity": "KitchenSink",
+            "Code": "TX0021",
+            "Group": "Kitchen sink",
+            "Text": "Capture some text",
+            "Type": "textbox",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "16",
+            "Activity": "KitchenSink",
+            "Code": "CB0021",
+            "Group": "Kitchen sink",
+            "Text": "Select the check box",
+            "Type": "check-box",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "17",
+            "Activity": "KitchenSink",
+            "Code": "DP0021",
+            "Group": "Kitchen sink",
+            "Text": "Select a date",
+            "Type": "date-picker",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "18",
+            "Activity": "KitchenSink",
+            "Code": "DD0021",
+            "Group": "Kitchen sink",
+            "Text": "Select from the drop down",
+            "Type": "drop-down",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "19",
+            "Activity": "KitchenSink",
+            "Code": "SS0021",
+            "Group": "Kitchen sink",
+            "Text": "Slide the value",
+            "Type": "slider",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "20",
+            "Activity": "KitchenSink",
+            "Code": "TG0021",
+            "Group": "Kitchen sink",
+            "Text": "Toggle the value",
+            "Type": "toggle",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "21",
+            "Activity": "KitchenSink",
+            "Code": "CP0021",
+            "Group": "Kitchen sink",
+            "Text": "Measurement Capacitance",
+            "Type": "capacitance",
+            "ValidCodes": [
+                "0"
+            ]
+        },
+        {
+            "id": "22",
+            "Activity": "KitchenSink",
+            "Code": "IN0021",
+            "Group": "Kitchen sink",
+            "Text": "Measurement Insulation",
+            "Type": "insulation",
+            "ValidCodes": [
+                "0"
+            ]
+        }
+    ],
+    "Equipment": [
+        {
+            "id": "1",
+            "GISID": 748655,
+            "Name": "C-2300",
+            "Type": "DSub",
+            "SiteAddress": "1 Aldersgate Road Hillsborough",
+            "GCValue": "Fully Enclosed",
+            "Location": {
+                "Lat": -36.932462,
+                "Lng": 174.744186
+            }
+        },
+        {
+            "id": "2",
+            "GISID": 687720,
+            "Name": "C-823",
+            "Type": "DSub",
+            "SiteAddress": "2 Allison Street Mount Roskill",
+            "GCValue": "Fully Enclosed",
+            "Location": {
+                "Lat": -36.905984,
+                "Lng": 174.725061
+            }
+        },
+        {
+            "id": "3",
+            "GISID": 694003,
+            "Name": "C-692",
+            "Type": "DSub",
+            "SiteAddress": "36 White Swan Road Mount Roskill",
+            "GCValue": "Fully Enclosed",
+            "Location": {
+                "Lat": -36.91451,
+                "Lng": 174.725609
+            }
+        },
+        {
+            "id": "4",
+            "GISID": 687720,
+            "Name": "C-1453",
+            "Type": "DSub",
+            "SiteAddress": "2C White Swan Road Mount Roskill",
+            "GCValue": "Fully Enclosed",
+            "Location": {
+                "Lat": -36.912879,
+                "Lng": 174.727711
+            }
+        },
+        {
+            "id": "5",
+            "GISID": 49120206,
+            "Name": "C-2291",
+            "Type": "DSub",
+            "SiteAddress": "180 White Swan Road Mount Roskill",
+            "GCValue": "Unknown",
+            "Location": {
+                "Lat": -36.92165,
+                "Lng": 174.715804
+            }
+        }
+    ],
+    "Activity": [
+        {
+            "id": "1",
+            "Code": "PD102",
+            "Name": "Visual inspection GM distribution equipment"
+        },
+        {
+            "id": "2",
+            "Code": "PD103",
+            "Name": "Visual inspection GM distribution transformer"
+        },
+        {
+            "id": "3",
+            "Code": "PD104",
+            "Name": "Visual inspection GM distribution switchgear"
+        },
+        {
+            "id": "4",
+            "Code": "KitchenSink",
+            "Name": "Demo of multiple control types"
+        }
+    ],
+    "AssessmentCode": [
+        {
+            "id": "0",
+            "CA": 0,
+            "Assessment": "Corrective action undertaken on the asset before work on-site is completed",
+            "ShortText": "Corrective action taken"
+        },
+        {
+            "id": "1",
+            "CA": 1,
+            "Assessment": "Failure mode expected to eventuate before the next maintenance period and could present a hazard",
+            "ShortText": "Failure expected before next maintenance - hazard"
+        },
+        {
+            "id": "2",
+            "CA": 2,
+            "Assessment": "Failure mode expected to eventuate before the next maintenance period",
+            "ShortText": "Failure expected before next maintenance"
+        },
+        {
+            "id": "3",
+            "CA": 3,
+            "Assessment": "Failure mode expected to eventuate after the next maintenance period but before the one after that",
+            "ShortText": "Failure expected after next maintenance"
+        },
+        {
+            "id": "4",
+            "CA": 4,
+            "Assessment": "Asset has a noteworthy issue that Vector is interested in recording",
+            "ShortText": "Noteworthy Issue"
+        }
+    ],
+    "Inspection": [
+        {
+            "id": "1",
+            "Inspector": "Geoff Goldblum",
+            "CreatedOn": "2018 05 04",
+            "Status": "task",
+            "TaskId": "1",
+            "EquipmentId": "1"
+        },
+        {
+            "id": "2",
+            "Inspector": "Geoff Goldblum",
+            "CreatedOn": "2018 04 04",
+            "Status": "complete",
+            "TaskId": "2",
+            "EquipmentId": "2"
+        },
+        {
+            "id": "3",
+            "Inspector": "Geoff Goldblum",
+            "CreatedOn": "2018 04 04",
+            "Status": "task",
+            "TaskId": "3",
+            "EquipmentId": "3"
+        },
+        {
+            "id": "4",
+            "Inspector": "Geoff Goldblum",
+            "CreatedOn": "2018 04 03",
+            "Status": "task",
+            "TaskId": "4",
+            "EquipmentId": "4"
+        },
+        {
+            "id": "5",
+            "Inspector": "Geoff Goldblum",
+            "CreatedOn": "2018 04 04",
+            "Status": "failed",
+            "TaskId": "5",
+            "EquipmentId": "5"
+        }
+    ]
+}

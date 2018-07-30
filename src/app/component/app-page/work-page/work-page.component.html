@@ -1,0 +1,7 @@
+<div class="work-container">
+    <app-work-pack-list class="work-pack-list"
+        [workPacks]="workPacks|async"
+        [selectedPack]="selectedPack|async"
+        (onSelected)="onSelected($event)"
+    ></app-work-pack-list>
+</div>

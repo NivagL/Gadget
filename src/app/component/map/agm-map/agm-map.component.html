@@ -1,0 +1,12 @@
+<agm-map #AgmMap 
+  [latitude]="lat" 
+  [longitude]="lng" 
+  [zoom]="zoom" 
+  (idle)="mapIdle()"
+  (mapReady)="mapReady($event)"
+  >
+  <agm-marker *ngFor="let p of markers|async" 
+    [latitude]="p.lat" 
+    [longitude]="p.lng"
+  ></agm-marker>
+</agm-map>

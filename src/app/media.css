@@ -1,0 +1,275 @@
+
+.status-chip {
+    padding: 5px;
+}
+
+.always-flex {
+    display: flex;
+    align-items: center; 
+    align-content: center;
+}
+
+.space-filler {
+    flex: 1 1 auto;
+    /* border: grey solid; */
+}
+
+.title-container {
+    display: flex;
+    align-items: center; 
+    align-content: center;
+}
+
+.title {
+    padding: 5px;
+}
+
+.description {
+    margin: 0px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) {
+    .material-icons { 
+        font-size: 18px;
+        text-rendering: optimizeLegibility;
+        padding: 2px;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center; 
+        align-content: center;
+        /* border: grey solid; */
+    }
+
+    .sub-title {
+        padding: 5px;
+    }
+    
+    .left {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-start;
+        /* border: grey solid; */
+    }
+    
+    .center {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: center;
+        /* border: grey solid; */
+    }
+    
+    .right {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-end;
+        /* border: grey solid; */
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .material-icons { 
+        font-size: 18px;
+        text-rendering: optimizeLegibility;
+        padding: 2px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center; 
+        align-content: center;
+
+    }
+
+    .sub-title {
+        padding: 5px;
+    }
+        
+    .left {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-start;
+    }
+    
+    .center {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: center;
+    }
+    
+    .right {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-end;
+    }
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .material-icons { 
+        font-size: 18px;
+        text-rendering: optimizeLegibility;
+        padding: 2px;
+    }
+
+    .container{
+        display: block;
+        align-items: center; 
+        align-content: center;
+
+    }
+    
+    .sub-title {
+        display: none;
+        padding: 5px;
+    }
+
+    .left {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-start;
+    }
+    
+    .center {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: center;
+    }
+    
+    .right {
+        font-size: 18px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-end;
+    }
+}
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .material-icons { 
+        font-size: 14px;
+        text-rendering: optimizeLegibility;
+        padding: 2px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center; 
+        align-content: center;
+
+    }
+    
+    .sub-title {
+        display: none;
+        padding: 5px;
+    }
+    
+    .optional {
+        display: none;
+    }
+
+    .left {
+        font-size: 14px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-start;
+    }
+    
+    .center {
+        font-size: 14px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: center;
+    }
+    
+    .right {
+        font-size: 14px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-end;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+  
+@media (min-width: 0px) and (max-width: 480px) {
+/* @media (min-width: 320px) and (max-width: 480px) { */
+    .material-icons { 
+        font-size: 12px;
+        text-rendering: optimizeLegibility;
+        padding: 2px;
+    }
+
+    .container{
+        /* display: flex; */
+        align-items: center; 
+        align-content: center;
+    }
+    
+    .sub-title {
+        display: none;
+    }
+
+    .optional {
+        display: none;
+    }
+    
+    .left {
+        font-size: 12px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-start;
+    }
+    
+    .center {
+        font-size: 12px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: center;
+    }
+    
+    .right {
+        font-size: 12px;
+        margin: 2px;
+        /* flex: 1; */
+        justify-content: flex-end;
+    }
+}    
+  

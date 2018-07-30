@@ -1,0 +1,8 @@
+thead th {
+    background:lightblue;
+}
+
+.input-row input{
+    width: 100%;
+    white-space:nowrap;
+}

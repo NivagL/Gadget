@@ -1,0 +1,16 @@
+<app-inspection-status 
+    [workPack]="selectedPack|async"
+    [selectedPack]="selectedPack|async"
+></app-inspection-status>
+<app-inspection-bar
+  [inspections]="filteredInspections|async"
+  [selectedInspection]="selectedInspection|async"
+  (onSelectedInspection)="onSelectedInspection($event)"
+></app-inspection-bar>
+<app-activity-bar
+  [activities]="activities|async"
+  [selectedActivity]="selectedActivity|async"
+  (onSelectedActivity)="onSelectedActivity($event)"
+></app-activity-bar>
+
+

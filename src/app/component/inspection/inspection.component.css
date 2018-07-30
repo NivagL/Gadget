@@ -1,0 +1,27 @@
+/* @import '../../../observation.css'; */
+
+::ng-deep .mat-expansion-panel-header {
+    background-color:#EEEEEE;
+}
+
+.mat-form-field {
+    display: block;
+}
+
+/* ::ng-deep .mat-input-underline {
+    border-bottom: 1px solid lightgreen;
+} */
+
+/* ::ng-deep .mat-input-placeholder {
+    border-bottom: 1px solid lightgreen;
+} */
+
+/* ::ng-deep .mat-input-infix {
+    border-bottom: 1px solid lightgreen;
+} */
+ 
+
+.note-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}

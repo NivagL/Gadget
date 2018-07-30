@@ -1,0 +1,67 @@
+[
+	{
+		"id": "1",
+		"GISID": 748655,
+		"Name": "C-2300",
+		"Type": "DSub",
+		"SiteAddress": "1 Aldersgate Road Hillsborough",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.932462,
+			"Lng": 174.744186
+		}
+	},
+	{
+		"id": "2",
+		"GISID": 687720,
+		"Name": "C-823",
+		"Type": "DSub",
+		"SiteAddress": "2 Allison Street Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.905984,
+			"Lng": 174.725061
+		}
+	},
+	{
+		"id": "3",
+		"GISID": 694003,
+		"Name": "C-692",
+		"Type": "DSub",
+		"SiteAddress": "36 White Swan Road Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.91451,
+			"Lng": 174.725609
+		}
+	},
+	{
+		"id": "4",
+		"GISID": 687720,
+		"Name": "C-1453",
+		"Type": "DSub",
+		"SiteAddress": "2C White Swan Road Mount Roskill",
+		"GCValue": "Fully Enclosed",
+		"Location": 
+		{
+			"Lat": -36.912879,
+			"Lng": 174.727711
+		}
+	},
+	{
+		"id": "5",
+		"GISID": 49120206,
+		"Name": "C-2291",
+		"Type": "DSub",
+		"SiteAddress": "180 White Swan Road Mount Roskill",
+		"GCValue": "Unknown",
+		"Location": 
+		{
+			"Lat": -36.92165,
+			"Lng": 174.715804
+		}
+	}
+]

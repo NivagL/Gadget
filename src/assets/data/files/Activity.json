@@ -1,0 +1,56 @@
+[
+	{
+		"_id": "1",
+		"Code": "PD102",
+		"Version": 1,
+		"Name": "Visual inspection GM distribution equipment"
+	},
+	{
+		"_id": "2",
+		"Code": "PD103",
+		"Version": 1,
+		"Name": "Visual inspection GM distribution transformer"
+	},
+	{
+		"_id": "3",
+		"Code": "PD104",
+		"Version": 1,
+		"Name": "Visual inspection GM distribution switchgear"
+	},
+	{
+		"_id": "4",
+		"Code": "Controls",
+		"Version": 1,
+		"Name": "Demo of multiple control types"
+	},
+	{
+		"_id": "5",
+		"Code": "Measurements",
+		"Version": 1,
+		"Name": "Demo of measurement points"
+	},
+	{
+		"_id": "6",
+		"Code": "Stepper",
+		"Version": 1,
+		"Name": "Demo of structured measurements"
+	},
+	{
+		"_id": "7",
+		"Code": "PD102",
+		"Version": 2,
+		"Name": "Visual inspection GM distribution equipment"
+	},
+	{
+		"_id": "8",
+		"Code": "OnSite",
+		"Version": 1,
+		"Name": "Activities on entering site"
+	},
+	{
+		"_id": "9",
+		"Code": "LeavingSite",
+		"Version": 1,
+		"Name": "Activities when leaving site"
+	}
+]

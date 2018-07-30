@@ -1,0 +1,20 @@
+<div class="map-wrapper" #mapwrapper>
+  <agm-map #AgmMap
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    (mapReady)="mapReady($event)"
+    >
+
+    <agm-marker 
+      *ngFor="let m of markers; let i = index"
+        (markerClick)="clickedMarker(m.label, i)"
+        [latitude]="m.lat"
+        [longitude]="m.lng"
+        [label]="m.label"
+        [iconUrl]="m.iconUrl"
+      >
+    </agm-marker>
+    
+  </agm-map>
+</div>

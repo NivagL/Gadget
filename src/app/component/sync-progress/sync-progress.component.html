@@ -1,0 +1,37 @@
+<div class='sync-page'>
+  <mat-card class='left'>
+    <mat-card-content>
+      <p strong>{{ (item | async).Title }} Synchronisation Status</p>
+      <mat-divider></mat-divider>
+      <p class='progress-header'>Inspections</p>
+      <section class='progress-bar'>
+        <mat-progress-bar mode="determinate" [color]="'accent'" [value]="InspectionProgress">
+        </mat-progress-bar>
+      </section>
+      <p class='progress-header'>Activities</p>
+      <section class='progress-bar'>
+        <mat-progress-bar mode="determinate" [color]="'accent'" [value]="ActivityProgress">
+        </mat-progress-bar>
+      </section>
+      <p class='progress-header'>Observations</p>
+      <section class='progress-bar'>
+        <mat-progress-bar mode="determinate" [color]="'accent'" [value]="ObservationProgress">
+        </mat-progress-bar>
+      </section>
+      <p class='progress-header'>Photos</p>
+      <section class='progress-bar'>
+        <mat-progress-bar mode="determinate" [color]="'accent'" [value]="PhotoProgress">
+        </mat-progress-bar>
+      </section>
+    </mat-card-content>
+  </mat-card>
+  <!-- <mat-card class='right'>
+    <mat-card-content>
+      <div class='log-container'>
+        <div class='log-entry' *ngFor="let log of statusLog|async">
+          {{log}}
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card> -->
+</div>

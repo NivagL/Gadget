@@ -1,0 +1,52 @@
+<h2 mat-dialog-title>Gadget Config</h2>
+<mat-dialog-content>
+
+  <mat-form-field>
+    <input matInput placeholder="Work Url" [(ngModel)]="workUrl">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Icon Size" [(ngModel)]="iconSize">
+  </mat-form-field>
+
+  <!-- <mat-form-field> -->
+  <mat-checkbox matInput [(ngModel)]="rotateImages">Rotate images?</mat-checkbox>
+  <!-- </mat-form-field> -->
+
+  <mat-form-field>
+    <input matInput placeholder="Number list items" [(ngModel)]="NumberListItems">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="List columns" [(ngModel)]="ListColumns">
+  </mat-form-field>
+
+  <!-- <mat-form-field> -->
+  <mat-checkbox matInput [(ngModel)]="showMapLocation">Show position on Map?</mat-checkbox>
+  <!-- </mat-form-field> -->
+
+  <mat-form-field>
+    <mat-select [formControl]="selectedMap">
+      <mat-option *ngFor="let map of config.availableMaps" [value]="map">
+        {{map}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <mat-toolbar>
+    <div class="space-filler"></div>
+    <div class="center">
+      <button mat-fab color='none' (click)="dialogRef.close(true)">Done
+        <!-- <i [ngClass]="config.iconSize">done</i> -->
+        <!-- <span class='optional'>Done</span> -->
+      </button>
+      <!-- <div class="space-filler"></div>  -->
+      <button mat-fab color='none' (click)="dialogRef.close(false)">Cancel
+        <!-- <i [ngClass]="config.iconSize">cancel</i> -->
+        <!-- <span class='optional'>Cancel</span> -->
+      </button>
+    </div>
+    <div class="space-filler"></div>
+  </mat-toolbar>
+</mat-dialog-actions>

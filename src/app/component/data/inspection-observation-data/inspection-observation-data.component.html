@@ -1,0 +1,38 @@
+<table>
+    <thead>
+        <th>_id</th>
+        <th>_rev</th>
+        <th>ActivityId</th>
+        <th>InspectionId</th>
+        <th>WorkOrderId</th>
+        <th>TaskId</th>
+        <th>EquipmentId</th>
+        <th>ObservationCode</th>
+        <th>ObservationGroup</th>
+        <th>ObservationText</th>
+        <th>ObservationType</th>
+        <!-- <th>Accessible</th> -->
+        <th>SelectedCode</th>
+        <!-- <th>Document</th> -->
+        <th>Notes</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of list|async">
+            <td>{{item._id}}</td>
+            <td>{{item._rev}}</td>
+            <td>{{item.ActivityId}}</td>
+            <td>{{item.InspectionId}}</td>
+            <td>{{item.WorkOrderId}}</td>
+            <td>{{item.TaskId}}</td>
+            <td>{{item.EquipmentId}}</td>
+            <td>{{item.Observation.Code}}</td>
+            <td>{{item.Observation.Group}}</td>
+            <td>{{item.Observation.Text}}</td>
+            <td>{{item.Observation.Type}}</td>
+            <!-- <td>{{item.Accessible}}</td> -->
+            <td>{{item.SelectedCode}}</td>
+            <!-- <td>{{item.Document}}</td> -->
+            <td>{{item.Notes}}</td>
+        <tr>
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+.red {
+    background:red;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.yellow {
+    background:yellow;
+    color:black;
+    height: 100%;
+    width: 100%;
+}
+
+.blue {
+    background:blue;
+    color:white;
+    height: 100%;
+    width: 100%;
+}

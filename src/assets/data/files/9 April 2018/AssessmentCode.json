@@ -1,0 +1,32 @@
+[
+	{
+		"id": "0",
+        "CA": 0,
+	    "Assessment": "Corrective action undertaken on the asset before work on-site is completed",
+        "ShortText": "Corrective action taken"
+    },
+	{
+		"id": "1",
+        "CA": 1,
+        "Assessment": "Failure mode expected to eventuate before the next maintenance period and could present a hazard",
+        "ShortText": "Failure expected before next maintenance - hazard"
+    },
+	{
+		"id": "2",
+        "CA": 2,
+        "Assessment": "Failure mode expected to eventuate before the next maintenance period",
+        "ShortText": "Failure expected before next maintenance"
+    },
+	{
+		"id": "3",
+        "CA": 3,
+        "Assessment": "Failure mode expected to eventuate after the next maintenance period but before the one after that",
+        "ShortText": "Failure expected after next maintenance"
+    },
+	{
+		"id": "4",
+        "CA": 4,
+        "Assessment": "Asset has a noteworthy issue that Vector is interested in recording",
+        "ShortText": "Noteworthy Issue"
+    }
+]

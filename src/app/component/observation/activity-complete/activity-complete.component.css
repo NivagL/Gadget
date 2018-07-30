@@ -1,0 +1,6 @@
+@import '../../../media.css';
+  
+ mat-form-field {
+    display: block;
+}
+ 

@@ -1,0 +1,36 @@
+@media (min-width: 768px) { 
+    .container {
+        display: grid;
+        height: 95vh;
+        width: 95vw;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list {
+        grid-column: 1;
+    }
+
+    .map {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 767px) { 
+    .container {
+        display: grid;
+        height: 95vh;
+        width: 95vw;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .list {
+        grid-row: 1;
+    }
+
+    .map {
+        grid-row: 2;
+    }
+}

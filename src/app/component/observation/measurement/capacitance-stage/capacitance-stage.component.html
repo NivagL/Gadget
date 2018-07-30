@@ -1,0 +1,77 @@
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">
+        Stage {{stage}} – Capacitance {{step}}
+      </th>
+    </tr>
+    <tr>
+      <th>Phase</th>
+      <th>Serial Number</th>
+      <th>
+        <p>Capacitance (µF)</p>
+        <p>(Measured)</p>
+      </th>
+      <th>
+        <p>Capacitance (µF)</p>
+        <p>(Actual)</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Red</th>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="red_serial_number" (input)="red_serial_number = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="red_measured" (input)="red_measured = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="red_actual" (input)="red_actual = $event.target.value">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>Yellow</th>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="yellow_serial_number" (input)="yellow_serial_number = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="yellow_measured" (input)="yellow_measured = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="yellow_actual" (input)="yellow_actual = $event.target.value">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>Blue</th>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="blue_serial_number" (input)="blue_serial_number = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="blue_measured" (input)="blue_measured = $event.target.value">
+        </div>
+      </td>
+      <td>
+        <div class="input-row">
+          <input [(ngModel)]="blue_actual" (input)="blue_actual = $event.target.value">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

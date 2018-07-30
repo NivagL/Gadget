@@ -1,0 +1,19 @@
+@import '../../../gallery.css';
+@import '../../../toolbar.css';
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.colour-button {
+    margin: 0px;
+    padding: 0px;
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.file-button {
+    border-radius: 50px;
+}

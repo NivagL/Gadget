@@ -1,0 +1,25 @@
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">
+      {{currentIndex + 1}} / {{length}}
+    </div>
+    <img [src]="currentUrl|async" style="width:100%" [ngClass]="rotate">
+    <div class="text">{{inspection.SiteAddress}}</div>
+  </div>
+  <a class="prev" (click)="onPrevious()">&#10094;</a>
+  <a class="next" (click)="onNext()">&#10095;</a>
+</div>
+<mat-toolbar>
+  <span class='space-filler'></span>
+  <span class='center'>
+    <button mat-icon-button (click)="OnNewPhoto()">
+      <i [ngClass]="config.iconSize">add_a_photo</i>
+      <div class='optional'>Add</div>
+    </button>
+   <button mat-icon-button (click)="dialogRef.close(true)">
+      <i [ngClass]="config.iconSize">done</i>
+      <div class='optional'>Done</div>
+    </button>
+  </span>
+  <span class='space-filler'></span>
+</mat-toolbar>

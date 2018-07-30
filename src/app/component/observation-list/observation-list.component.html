@@ -1,0 +1,58 @@
+<div>
+    <div *ngFor="let item of observations|async">
+        <div [ngSwitch]="item.Observation.Type">
+
+            <div *ngSwitchCase="'ObCode'">
+                <app-assessment-code 
+                    [inspection]="inspection|async"
+                    [observation]="item"
+                ></app-assessment-code>
+            </div>
+
+            <div *ngSwitchCase="'textbox'">
+                <app-textbox></app-textbox>
+            </div>
+
+            <div *ngSwitchCase="'slider'">
+                <app-slider></app-slider>
+            </div>
+
+            <div *ngSwitchCase="'drop-down'">
+                <app-drop-down></app-drop-down>
+            </div>
+
+            <div *ngSwitchCase="'check-box'">
+                <app-check-box></app-check-box>
+            </div>
+
+            <div *ngSwitchCase="'date-picker'">
+                <app-date-picker></app-date-picker>
+            </div>
+
+            <div *ngSwitchCase="'toggle'">
+                <app-toggle></app-toggle>
+            </div>
+
+            <div *ngSwitchCase="'capacitance'">
+                <app-capacitance-stage></app-capacitance-stage>
+            </div>
+
+            <div *ngSwitchCase="'insulation'">
+                <app-insulation-stage></app-insulation-stage>
+            </div>
+
+            <div *ngSwitchCase="'stepper'">
+                <app-capacitor-bank-inspection></app-capacitor-bank-inspection>
+            </div>
+
+            <div *ngSwitchCase="'activity-complete'">
+                <app-activity-complete
+                    [inspection]="inspection|async"
+                    [observation]="item"
+                    (onActivityComplete)="activityComplete($event)"
+                ></app-activity-complete>
+            </div>
+            
+        </div>
+    </div>
+</div>

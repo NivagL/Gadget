@@ -1,0 +1,17 @@
+<span class='container'>
+  <span class='left'>
+      Controls Demo
+  </span>
+  <span class='center'>
+    Select question
+  </span>
+  <span class='space-filler'></span>
+  <span class='right'>
+    <mat-form-field>
+      <mat-select [formControl]="selection">
+        <mat-option *ngFor="let item of item_list" [value]="item">
+          {{item}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </span>
+</span>

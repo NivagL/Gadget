@@ -1,0 +1,10 @@
+<div class='work-pack' 
+  *ngFor="let pack of workPacks"
+  [ngClass]="{'selected-pack': pack._id == selectedPack._id}"
+  (click)="OnClick(pack)"
+  >
+  <app-inspection-status 
+    [workPack]="pack"
+    [selectedPack]="selectedPack"
+  ></app-inspection-status>
+</div>

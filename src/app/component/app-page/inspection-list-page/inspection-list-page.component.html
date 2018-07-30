@@ -1,0 +1,31 @@
+<app-inspection-status 
+    [workPack]="workPack|async"
+    [selectedPack]="workPack|async"
+></app-inspection-status>
+<app-inspection-toolbar 
+    [inspection]="selectedInspection|async"
+></app-inspection-toolbar>
+<div class="container">
+    <app-inspection-list class="list"
+        [inspections]="inspections|async"
+        [selectedInspection]="selectedInspection|async"
+        (onSelectedInspection)="onSelectedInspection($event)"
+        (onFilteredInspections)="onFilteredInspections($event)"
+    ></app-inspection-list>
+    <!-- a selected map -->
+    <!-- <app-sdk-map *ngIf="selectedMap=='Default'"
+        [inspections]="filteredInspections|async"
+        [selectedInspection]="selectedInspection|async"
+        (onSelectedInspection)="onSelectedInspection($event)"
+    ></app-sdk-map> -->
+    <app-inspection-map class="map" *ngIf="selectedMap=='Default'"
+        [inspections]="filteredInspections|async"
+        [selectedInspection]="selectedInspection|async"
+        (onSelectedInspection)="onSelectedInspection($event)"
+    ></app-inspection-map>
+    <!-- <app-agm-map *ngIf="selectedMap=='GoogleAGM'"
+        [inspections]="filteredInspections|async"
+    ></app-agm-map> -->
+    <app-arcgis-map *ngIf="selectedMap=='ArcGIS'"
+    ></app-arcgis-map>
+</div>

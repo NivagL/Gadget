@@ -1,0 +1,25 @@
+.map-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+agm-map {
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+* {
+  font-family: Lato;
+}
+
+a {
+  color: darkblue;
+}
+
+.selected-pin {
+    animation: pulsate 1s ease-out;
+    animation-delay: 1.1s;
+    animation-iteration-count: infinite;
+}
