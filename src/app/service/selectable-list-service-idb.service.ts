@@ -2,9 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { ConfigurationService } from './configuration.service';
 import { Id } from '../model/Id';
-import { ListServiceIdb } from './list-service-idb.service';
+import { ListService } from './list-service';
+//import { ListServiceIdb } from './list-service-idb.service';
 
-export class SelectableListServiceIdb <T extends Id> extends ListServiceIdb<T> {
+export class SelectableListServiceIdb <T extends Id> extends ListService<T> {
   protected selected: BehaviorSubject<T>;
 
   constructor( public name: string,
