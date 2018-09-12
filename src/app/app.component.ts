@@ -3,6 +3,7 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { Routes, Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { Location } from '@angular/common';
 
 import { ConfigDialogComponent } from './component/config-dialog/config-dialog.component'
 import { ConfirmDialogComponent } from './component/confirm-dialog/confirm-dialog.component'
@@ -57,6 +58,7 @@ export class AppComponent {
     private workOrderService: WorkPackService,
     private inputDataService: InputDataService,
     private outputDataService: OutputDataService,
+    private location: Location,
     ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
 
@@ -179,14 +181,7 @@ export class AppComponent {
   }
 
   onBack() {
-    if(this.router.isActive('/work', true)) {
-    }
-    if(this.router.isActive('/list', true)) {
-      this.router.navigate(['/work']);  
-    }
-    if(this.router.isActive('/inspection', true)) {
-      this.router.navigate(['/list']);  
-    }
+    this.location.back();
   }
 
   //Debug toolbar
