@@ -45,7 +45,7 @@ export class InspectionToolbarComponent implements OnInit {
     let count = this.observationService.checkObservations(this.inspection._id);
     if(count > 0) {
       let dialogRef = this.dialog.open(ConfirmDialogComponent);
-      let dialogmsg = count == 1? 'There is a mandatory questions to complete.' 
+      let dialogmsg = count == 1? 'There is a mandatory question to complete.' 
         : 'There are ' + count + ' mandatory questions to complete.';
       dialogRef.componentInstance.confirmMessage = dialogmsg;
       dialogRef.componentInstance.style = 'OK';

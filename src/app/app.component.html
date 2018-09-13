@@ -17,6 +17,11 @@
             </button>
           </mat-toolbar-row>
           <mat-toolbar-row>
+            <button mat-icon-button (click)="onList()">
+              <i [ngClass]="config.iconSize">list</i>
+            </button>
+          </mat-toolbar-row>
+          <mat-toolbar-row>
             <button mat-icon-button (click)="openAccountDialog()">
               <i [ngClass]="config.iconSize">account_box</i>
             </button>

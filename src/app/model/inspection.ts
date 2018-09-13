@@ -1,10 +1,11 @@
 import { Id } from './Id'
 
-import { Task } from './task';
-import { Equipment } from './equipment';
-import { Activity } from './activity';
+// import { Task } from './task';
+// import { Equipment } from './equipment';
+// import { Activity } from './activity';
+// import { InspectionActivity } from './inspection-activity';
+
 import { AccessDetails } from './access';
-import { InspectionActivity } from './inspection-activity';
 import { Location } from './location';
 
 export class Inspection  extends Id {
